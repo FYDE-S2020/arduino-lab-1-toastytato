@@ -49,17 +49,18 @@ Team Number: F2
 
 11. list one pro and one con of SPI
 
-    Pro: Less prone to interference because of clock pn
+    Pro: Less prone to interference because of clock pin
     Con: Requires more pins to interface
 
 12. list one pro and one con of I2C
 
     Pro: Requires less only 2 signal wires to interface
-    Con: Slower communication speeds
+    Con: Slower communication speeds and much more senstive to interference
 
 13. Why does I2C need external resistors to work?
 
-    It uses external resistors as an pull up resistor because I2C uses negative logic to communicate
+    It uses external resistors as an pull up or pull down resistors to the logic signal. 
+
 
 ## Screenshots
 
