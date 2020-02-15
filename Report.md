@@ -1,73 +1,76 @@
-Name:
+Name: Shaw-Iong Hsueh
 
-EID:
+EID: sh48926
 
-Team Number:
+Team Number: F2
 
 ## Questions
 
 1. Why does your program need a setup and a loop?
 
-    your answer here
+    The setup initializes the pins as inputs/output, and initializes the things that only take one step.
 
 2. What is the downside to putting all your code in a loop?
 
-    your answer here
+    Putting all the code in a loop means that it will always run, so if there is something that only needs to be run once it will need an alternative method to be implemented. 
 
 3. Why does your code need to be compiled?
 
-    your answer here
+    To convert the C code to machine language for the Arduino
 
 4. When lowering the frequency in procedure A, step 4, what is going wrong? Brainstorm some solutions. Dimmers exist in the real world. What is their solution?
 
-    your answer here
+    When the frequency goes down, the LED starts to flash much more noticeably because the duty cycle in which the LED is off lasts for much longer. To combat this, they could increase the frequency so that the flash is not noticeable to the human eye. They could also use capacitors to smooth out the voltage. 
 
 5. Why do you need to connect the logic analyzer ground to the ESP32 ground?
 
-    your answer here
+    So that the logic analyzer would have the same reference voltage.
 
 6. What is the difference between synchronous and asynchronous communication?
 
-    your answer here
+    Synchronous communication requres an external clock to synchronize the timing of communication between two or more devices, while asynchronous are synchronized by special signals along the transmission line. 
 
 7. Profile of UART: Sent X bytes in Y time 
-
-    your answer here
+    
+    Sent "yeet" (5 bytes) in 0.9513 ms
 
 8. Profile of SPI: Sent X bytes in Y time
 
-    your answer here
+    Sent "yeet" (5 bytes) in 0.131 ms
 
 9. Why is SPI so much faster than UART?
 
-    your answer here
+    The clock is already set, so it doesn't waste time initializing the clock through the transmission signal. It can automatically go to reading what the message is
 
 10. list one pro and one con of UART
 
-    your answer here
+    Pro: Less pins are used
+    Con: Slower than other communications
 
 11. list one pro and one con of SPI
 
-    your answer here
+    Pro: Less prone to interference because of clock pn
+    Con: Requires more pins to interface
 
 12. list one pro and one con of I2C
 
-    your answer here
+    Pro: Requires less only 2 signal wires to interface
+    Con: Slower communication speeds
 
 13. Why does I2C need external resistors to work?
 
-    your answer here
+    It uses external resistors as an pull up resistor because I2C uses negative logic to communicate
 
 ## Screenshots
 
 Procedure A, step 1:
-![Put path to your image here ->](img/placeholder.png)
+![Put path to your image here ->](img/Blink.png)
 
 Procedure A, step 4:
-![Put path to your image here ->](img/placeholder.png)
+![Put path to your image here ->](img/Fade.png)
 
 Procedure B, UART:
-![Put path to your image here ->](img/placeholder.png)
+![Put path to your image here ->](img/UART.png)
 
 Procedure B, SPI:
-![Put path to your image here ->](img/placeholder.png)
+![Put path to your image here ->](img/SPI.png)
